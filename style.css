@@ -1,0 +1,286 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	/* background-color: #282828; */
+	background-color: #f2f2f2;
+	background-color: inherit;
+
+}
+
+.container {
+	display: grid;
+	grid-template:
+		"sidebar header" 1fr
+		"sidebar main" 4fr
+		/ 1fr 4fr;
+	height: 100vh;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	display: grid;
+	height: 100%;
+	grid-template-rows: auto 1fr 1fr;
+		background-color: #333333;
+
+}
+
+.logo h1 {
+	color: #f2f2f2
+}
+
+.menu,
+.settings {
+	background-color: #333333;
+
+}
+
+.header {
+	grid-area: header;
+	display: grid;
+	grid-template: auto auto / 2fr 1fr;
+}
+
+.profile img {
+	height: 5vh;
+	padding-top: 0.5vh;
+}
+
+.search {
+	grid-area: 1 / 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search input {
+	width: 90%;
+	border-radius: 5px;
+}
+
+.profile {
+	grid-area: 1 / 2;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 2vw;
+	gap: 1vw;
+}
+
+.welcome {
+	grid-area: 2 / 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1vw;
+	margin-left: 1rem;
+}
+
+.buttons {
+	grid-area: 2 / 2;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2.5vw;
+	margin: 1rem;
+}
+
+.main {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	margin-top: 2vw;
+}
+
+.projects {
+	grid-area: 1 / 1;
+	background-color: #D3D3D3;
+	padding: 1rem;
+
+}
+
+h2 {
+	background-color: inherit;
+}
+
+
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+	background-color: inherit;
+	padding: 1rem;
+
+}
+
+.card {
+	border: 2px solid black;
+	display: grid;
+	gap: 1rem;
+	justify-content: center;
+	grid-template-rows: auto 1fr auto;
+	min-height: 250px;
+	padding: 1rem;
+}
+
+.card h1,
+.card p {
+	text-align: center;
+}
+
+.options {
+	display: flex;
+	gap: 1rem;
+}
+
+.social {
+	grid-area: 1 / 2;
+	background-color: inherit;
+}
+
+.logo {
+	height: 100px;
+	display: flex;
+	align-self: flex-start;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+
+}
+
+.logo .h1 {
+	align-items: center;
+	justify-content: center;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	padding-top: 3rem;
+}
+
+.settings {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.settings a,
+.menu a {
+	font-size: large;
+	text-decoration: none;
+}
+
+a {
+	color:#f2f2f2;
+}
+
+a:active {
+	transform: translateY(2px);
+}
+
+img {
+	width: 70px;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	gap: 2rem;
+	background-color: #D3D3D3;
+}
+
+.announcements {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 2rem;
+	background-color: rgba(183, 182, 182, 0.927);
+	border-radius: 5px;
+}
+
+.announcement {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 50px;
+	min-width: 200px;
+	text-overflow: ellipsis;
+
+}
+
+hr {
+	width: 90%;
+}
+
+.leaderboard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+
+}
+
+.place {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.place img {
+	height: 50px;
+}
+
+.button-27 {
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.search img {
+	height: 2rem;
+}
