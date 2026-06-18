@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Admin</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -13,22 +14,62 @@
 		<div class="sidebar">
 			<div class="logo">
 				<img src="icons/icon.svg" alt="technology-icon">
-				<h1>Virusoft</h1>
+				<h1 class="hideItem">Virusoft</h1>
+				<button id="temp"><img src="icons/settings.svg" alt=""></button>
+
 			</div>
 			<div class="menu">
-				<a href="">Home</a>
+				<!-- <a href="">Home</a>
 				<a href="">Profile</a>
 				<a href="">Messages</a>
 				<a href="">Tasks</a>
-				<a href="">Communities</a>
+				<a href="">Communities</a> -->
+				<button>
+					<img src="icons/home.svg" alt="">
+					<p class="hideItem">Home</p>
+				</button>
+				<button>
+					<img src="icons/profile.svg" alt="">
+					<p class="hideItem">Profile</p>
+				</button>
+				<button>
+					<img src="icons/messages.svg" alt="">
+					<p class="hideItem">Messages</p>
+				</button>
+				<button>
+					<img src="icons/tasks.svg" alt="">
+					<p class="hideItem">Tasks</p>
+				</button>
+				<button>
+					<img src="icons/settings.svg" alt="">
+					<p class="hideItem">Communities</p>
+				</button>
 			</div>
 			<div class="settings">
-				<a href="">Settings</a>
+				<!-- <a href="">Settings</a>
 				<a href="">Profile</a>
-				<a href="">Privacy</a>
+				<a href="">Privacy</a> -->
+				<button>
+					<img src="icons/settings.svg" alt="">
+					<p class="hideItem">Settings</p>
+				</button>
+				<button>
+					<img src="icons/profile.svg" alt="">
+					<p class="hideItem">Profile</p>
+
+				</button>
+				<button>
+					<img src="icons/privacy.svg" alt="">
+					<p class="hideItem">Privacy</p>
+				</button>
 			</div>
 		</div>
 		<div class="header">
+			<div class="buttons">
+				<button class="button-27">New</button>
+				<button class="button-27">Upload</button>
+				<button class="button-27">Share</button>
+			</div>
 			<div class="search">
 				<img src="icons/search.svg" alt="">
 				<input type="text">
@@ -37,77 +78,73 @@
 				<img src="icons/technology-icon.svg" alt="pfp">
 				<h2>Bill Trojan</h2>
 			</div>
-			<div class="welcome">
-				<img src="icons/technology-icon.svg" alt="pfp">
-				<div class="greet">
-					<p>Nice to infect you,</p>
-					<h1>Bill Trojan</h1>
-				</div>
-			</div>
-			<div class="buttons">
-				<button class="button-27">New</button>
-				<button class="button-27">Upload</button>
-				<button class="button-27">Share</button>
-			</div>
+
 		</div>
 		<div class="main">
-			<div class="projects">
+			<div class="greeting">
+				<div class="welcome">
+					<img src="icons/technology-icon.svg" alt="pfp">
+					<div class="greet">
+						<p>Nice to infect you,</p>
+						<h1>Bill Trojan</h1>
+					</div>
+				</div>
 				<h2>Your Viruses</h2>
+			</div>
 
-				<div class="cards">
-					<div class="card">
-						<h1>Project 1</h1>
-						<p>Project Content</p>
-						<div class="options">
-							<button>Option 1</button>
-							<button>Option 2</button>
-							<button>Option 3</button>
-						</div>
+			<div class="cards">
+				<div class="card">
+					<h1>Project 1</h1>
+					<p>Project Content</p>
+					<div class="options">
+						<button><img src="icons/save.svg" alt=""></button>
+						<button><img src="icons/edit.svg" alt=""></button>
+						<button><img src="icons/settings.svg" alt=""></button>
 					</div>
-					<div class="card">
-						<h1>Project 2</h1>
-						<p>Project Content</p>
-						<div class="options">
-							<button>Option 1</button>
-							<button>Option 2</button>
-							<button>Option 3</button>
-						</div>
+				</div>
+				<div class="card">
+					<h1>Project 2</h1>
+					<p>Project Content</p>
+					<div class="options">
+						<button><img src="icons/save.svg" alt=""></button>
+						<button><img src="icons/edit.svg" alt=""></button>
+						<button><img src="icons/settings.svg" alt=""></button>
 					</div>
-					<div class="card">
-						<h1>Project 3</h1>
-						<p>Project Content</p>
-						<div class="options">
-							<button>Option 1</button>
-							<button>Option 2</button>
-							<button>Option 3</button>
-						</div>
+				</div>
+				<div class="card">
+					<h1>Project 3</h1>
+					<p>Project Content</p>
+					<div class="options">
+						<button><img src="icons/save.svg" alt=""></button>
+						<button><img src="icons/edit.svg" alt=""></button>
+						<button><img src="icons/settings.svg" alt=""></button>
 					</div>
-					<div class="card">
-						<h1>Project 4</h1>
-						<p>Project Content</p>
-						<div class="options">
-							<button>Option 1</button>
-							<button>Option 2</button>
-							<button>Option 3</button>
-						</div>
+				</div>
+				<div class="card">
+					<h1>Project 4</h1>
+					<p>Project Content</p>
+					<div class="options">
+						<button><img src="icons/save.svg" alt=""></button>
+						<button><img src="icons/edit.svg" alt=""></button>
+						<button><img src="icons/settings.svg" alt=""></button>
 					</div>
-					<div class="card">
-						<h1>Project 5</h1>
-						<p>Project Content</p>
-						<div class="options">
-							<button>Option 1</button>
-							<button>Option 2</button>
-							<button>Option 3</button>
-						</div>
+				</div>
+				<div class="card">
+					<h1>Project 5</h1>
+					<p>Project Content</p>
+					<div class="options">
+						<button><img src="icons/save.svg" alt=""></button>
+						<button><img src="icons/edit.svg" alt=""></button>
+						<button><img src="icons/settings.svg" alt=""></button>
 					</div>
-					<div class="card">
-						<h1>Project 6</h1>
-						<p>Project Content</p>
-						<div class="options">
-							<button>Option 1</button>
-							<button>Option 2</button>
-							<button>Option 3</button>
-						</div>
+				</div>
+				<div class="card">
+					<h1>Project 6</h1>
+					<p>Project Content</p>
+					<div class="options">
+						<button><img src="icons/save.svg" alt=""></button>
+						<button><img src="icons/edit.svg" alt=""></button>
+						<button><img src="icons/settings.svg" alt=""></button>
 					</div>
 				</div>
 			</div>
